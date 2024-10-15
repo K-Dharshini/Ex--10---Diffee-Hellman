@@ -42,8 +42,12 @@ int modExp(int base, int exp, int mod) {
 
 int main() {
     // Publicly known values
-    int p = 23;  // A large prime number
-    int g = 5;   // A primitive root modulo p
+    int p;  // A large prime number
+    int g;   // A primitive root modulo p
+    printf("Enter a prime number (p): ");
+    scanf("%d", &p);
+    printf("Enter a base (g): ");
+    scanf("%d", &g);
     
     // Private keys (chosen secretly by Alice and Bob)
     int a, b;
@@ -78,7 +82,7 @@ int main() {
 ~~~
 
 ## OUTPUT:
-![image](https://github.com/user-attachments/assets/b56f7677-415d-450f-b06f-650c173ec0e1)
+![image](https://github.com/user-attachments/assets/182e0136-8e00-49f5-a1eb-c0582e03655e)
 
 ## RESULT:
 The program for the Diffie-Hellman algorithm is executed successfully, and Alice and Bob have securely derived a shared secret key.
